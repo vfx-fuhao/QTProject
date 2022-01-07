@@ -1,0 +1,44 @@
+#include "ui_toolsinstall.h"
+
+void HFUIFile::setupUi(QWidget* ToolsInstall)
+{
+    this->createWidgets();
+    this->layoutWidgets(ToolsInstall);
+    this->createConnections();
+}
+
+
+void HFUIFile::createWidgets()
+{
+    radioBtn_maya = 
+    
+    test_label = new QLabel();
+    test_label->setText("Test Label");
+    test_line = new QLineEdit();
+    test_btn = new QPushButton("Test Button");
+    test_text = new QTextEdit();
+}
+
+void HFUIFile::layoutWidgets(QWidget* ToolsInstall)
+{
+    HLayout1 = new QHBoxLayout();
+    HLayout1->addWidget(this->test_label);
+    HLayout1->addWidget(this->test_line);
+    HLayout1->addWidget((this->test_btn));
+
+    VLayout1 = new QVBoxLayout(ToolsInstall);
+    VLayout1->addLayout(HLayout1);
+    VLayout1->addWidget(test_text);
+}
+
+
+void HFUIFile::createConnections()
+{
+
+}
+
+
+void HFUIFile::retranslateUi(QWidget *ToolsInstall)
+{
+
+}
