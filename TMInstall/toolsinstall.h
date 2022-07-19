@@ -4,6 +4,7 @@
 #include <io.h>
 #include <direct.h>
 #include <string>
+#include <stdio.h>
 #include <stdlib.h>
 #include <QWidget>
 #include <iostream>
@@ -11,6 +12,10 @@
 #include <QSignalMapper>
 #include "ui_toolsinstall.h"
 #include <QMessageBox>
+#include <windows.h>
+#include <winbase.h>
+#include <exception>
+#include <QTime>
 
 
 class ToolsInstall : public QWidget
@@ -21,6 +26,10 @@ public:
     ToolsInstall(QWidget *parent = nullptr);
     ~ToolsInstall();
     void createConnections();
+    QString getLineEdit(QLineEdit *inLine);
+    void insertSetColorRed(QTextEdit* inText, QString inString);
+    void insertSetColorBlack(QTextEdit* inText, QString inString);
+
 
 private slots:
     void print_test();
@@ -32,6 +41,7 @@ private slots:
     void updateCheckStateHou(bool checked);
     void updateCheckStateMap(bool checked);
     void updateCheckStateUnmap(bool checked);
+    void clearHboxLayout();
 
 
 private:

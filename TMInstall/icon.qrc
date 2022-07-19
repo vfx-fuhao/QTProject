@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/huanleLogoSmall2.jpg</file>
+        <file>images/Logo_resize2.jpg</file>
+        <file>images/versionInfo.jpg</file>
+    </qresource>
+</RCC>

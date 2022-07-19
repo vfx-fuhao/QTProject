@@ -42,15 +42,21 @@ public:
     QLineEdit *hou_line;
     QPushButton *hou_btn;
 
+    QLabel *huanleLogoLabel;
     QPushButton *confirmBtn;
     QPushButton *closeBtn;
+    QPushButton *finishedBtn;
+
+    QLabel *infoLabel;
 
     QHBoxLayout *HLayout1;
     QHBoxLayout *HLayout2;
     QHBoxLayout *HLayout3;
     QHBoxLayout *HLayout4;
     QHBoxLayout *HLayout5;
+    QHBoxLayout *HVersionLayout;
     QVBoxLayout *VLayout1;
+    QVBoxLayout *VCheckVersionLayout;
 
     QGroupBox *groupBox1;
     QGroupBox *maxPathGroupBox;
@@ -61,8 +67,16 @@ public:
     QCheckBox *checkBox_max;
     QCheckBox *checkBox_hou;
 
+    QLabel *mayaSupVersion;
+    QLabel *maxSupVersion;
+    QLabel *houSupVersion;
+
     QCheckBox *mapCheckBox;
     QCheckBox *unmapCheckBox;
+
+private:
+    QString defaultMaxPath;
+    QString defaultHouPath;
 
 //    QFileDialog *maxDialog;
 //    QFileDialog *houDialog;
